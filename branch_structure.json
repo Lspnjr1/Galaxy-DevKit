@@ -1,0 +1,27 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "fix/issue-406",
+    "fix/issue-415",
+    "fix/issue-430",
+    "fix/issue-430-build-followups",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "fix/issue-406": "main",
+    "fix/issue-415": "main",
+    "fix/issue-430": "main",
+    "fix/issue-430-build-followups": "fix/issue-430",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "fix/issue-406",
+    "fix/issue-415",
+    "fix/issue-430",
+    "origin",
+    "fix/issue-430-build-followups"
+  ]
+}
