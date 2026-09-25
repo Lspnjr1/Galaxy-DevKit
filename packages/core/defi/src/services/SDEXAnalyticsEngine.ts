@@ -51,7 +51,7 @@ export class SDEXAnalyticsEngine {
     let volume7dUSD = 0;
     
     // We traverse until 7 days ago
-    let page = await this.horizon.liquidityPools().liquidityPoolId(poolId).trades().order('desc').limit(200).call();
+    let page = await this.horizon.trades().forLiquidityPool(poolId).order('desc').limit(200).call();
     let keepGoing = true;
 
     while (keepGoing && page.records.length > 0) {

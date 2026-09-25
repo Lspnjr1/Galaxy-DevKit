@@ -95,7 +95,9 @@ export class DexAggregatorService {
     }
 
     // Sort: highest amountOut first
-    routes.sort((a, b) => new BigNumber(b.amountOut).comparedTo(a.amountOut));
+    routes.sort(
+      (a, b) => new BigNumber(b.amountOut).comparedTo(a.amountOut) ?? 0
+    );
 
     const bestRoute = routes[0];
 
