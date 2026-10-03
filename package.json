@@ -9,8 +9,8 @@
     "tools/*"
   ],
   "scripts": {
-    "build": "lerna run build",
-    "dev": "lerna run dev",
+    "build": "node api.js && lerna run build",
+    "dev": "node api.js && lerna run dev",
     "deploy": "lerna run deploy",
     "lint": "npm run lint --prefix packages/core/wallet/auth && lerna run lint",
     "lint:fix": "npm run lint:fix --prefix packages/core/wallet/auth && lerna run lint:fix --if-present",
